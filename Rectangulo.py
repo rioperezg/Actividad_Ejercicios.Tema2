@@ -6,8 +6,8 @@ Añade al rectángulo un método llamado altura que muestre la altura.
 Añade al rectángulo un método llamado area que muestre el area
 """
 from Punto import Punto
-from Rectangulo import Base
-from Rectangulo import Altura
+
+
 
 class Rectangulo:
     def __init__(self, x1, y1, x2, y2):
@@ -19,16 +19,18 @@ class Rectangulo:
         
     def Base(self):
         base = abs(self.P.x - self.Q.x)
+        self.base = base
         print("Base del rectangulo:")
         return base
     def Altura(self):
         altura = abs(self.P.y - self.Q.y)
+        self.altura = altura
         print("Altura del rectangulo:")
         return altura
     def Area_triang(self):
-        base = self.Base
-        altura = self.Altura
-        Area = (base*altura)/2
+        base_tr = self.base
+        altura_tr = self.altura
+        Area = (base_tr*altura_tr)/2
         return "Area del triangulo: {}, u^2".format(Area)        
 # print(Rectangulo.__init__(x1=1,y1=3,x2=6,y2=4))
 rect = Rectangulo(1,2,5,3)
