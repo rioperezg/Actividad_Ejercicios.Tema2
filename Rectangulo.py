@@ -6,7 +6,7 @@ Añade al rectángulo un método llamado altura que muestre la altura.
 Añade al rectángulo un método llamado area que muestre el area
 """
 from Punto import Punto
-
+import main
 
 
 class Rectangulo:
@@ -32,13 +32,5 @@ class Rectangulo:
         altura_tr = self.altura
         Area = (base_tr*altura_tr)/2
         return "Area del triangulo: {} u^2".format(Area)        
-# Experimentacion
-""""
-Crea los puntos A(2, 3), B(5,5), C(-3, -1) y D(0,0) e imprimelos por pantalla.
-Consulta a que cuadrante pertenecen el punto A, C y D.
-Consulta los vectores AB y BA.
-(Optativo) Consulta la distancia entre los puntos 'A y B' y 'B y A'.
-(Optativo) Determina cual de los 3 puntos A, B o C, se encuentra más lejos del origen, punto (0,0).
-Crea un rectángulo utilizando los puntos A y B.
-Consulta la base, altura y área del rectángulo.
-"""
+if __name__=="_main_":
+    main()
