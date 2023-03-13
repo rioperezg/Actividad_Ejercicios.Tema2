@@ -27,8 +27,9 @@ print(D.cuadrante())
 print(Punto.distancia(self=A,other=B))
 print(Punto.distancia(self=B,other=A))
 # Rectangulo con A y B
-print(Rectangulo.__init__(2, 3, 5, 5))
+Rect_Ab = Rectangulo(2, 3, 5, 5)
+print(Rect_Ab)
 # Altura, base y area
-print(Rectangulo.Altura(2, 3, 5, 5))
-print(Rectangulo.Base(2, 3, 5, 5))
-print(Rectangulo.Area_triang(2, 3, 5, 5))
+print(Rectangulo.Altura(Rect_Ab))
+print(Rectangulo.Base(Rect_Ab))
+print(Rectangulo.Area_triang(Rect_Ab))

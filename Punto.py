@@ -18,35 +18,35 @@ class Punto:
         self.x = x
         self.y = y
     def __str__(self):
-        print("Punto:({},{})".format(self.x, self.y))
+        return "Punto:({},{})".format(self.x, self.y)
     def __str2__(self):
         return("Punto ({self.x}, {self.y})".format(self=self))    
     def cuadrante(self):
         if self.x > 0:
             if self.y > 0:
-               print("El punto pertenece al primer cuandrante")
+               return "El punto pertenece al primer cuandrante"
             elif self.y == 0:
-                print("El punto se encuentra sobre el eje x")   
+               return "El punto se encuentra sobre el eje x"
             else:
-               print("El punto pertence al cuarto cuadrante")
+               return "El punto pertence al cuarto cuadrante"
         elif self.x == 0:
             if self.y == 0:
-                print("El punto es igual al origen")
+                return "El punto es igual al origen"
             else:    
-                print("El punto se encuentra sobre el eje y")       
+                return "El punto se encuentra sobre el eje y"       
         else:    
             if self.y > 0:
-                print("El punto pertenece al segundo cuadrante")
+                return "El punto pertenece al segundo cuadrante"
             elif self.y == 0:
-                print("El punto se encurntra sobre el eje x")
+                return "El punto se encurntra sobre el eje x"
             else:
-                print("El punto pertenece al tercer cuadrante")         
+                return "El punto pertenece al tercer cuadrante"         
     def Vector(self, other):
         Componente_x = other.x - self.x
         Componente_y = other.y - self.y
-        print ("Vector: ({},{})".format(Componente_x, Componente_y))
+        return ("Vector: ({},{})".format(Componente_x, Componente_y))
     def distancia(self,other):
-        Componente_x = other.x - self.x
-        Componente_y = other.y - self.y
+        Componente_x = abs(other.x - self.x)
+        Componente_y = abs(other.y - self.y)
         distancia = math.sqrt((Componente_x)^2 + (Componente_y)^2)
         return "Distancia: {}".format(distancia)
