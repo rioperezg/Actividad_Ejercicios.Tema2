@@ -43,7 +43,7 @@ class Punto:
     def Vector(self, other):
         Componente_x = other.x - self.x
         Componente_y = other.y - self.y
-        return("Vector: ({},{})".format(Componente_x, Componente_y))
+        return "Vector: ({},{})".format(Componente_x, Componente_y)
     def distancia(self,other):
         Componente_x = other.x - self.x
         Componente_y = other.y - self.y
