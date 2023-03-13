@@ -6,9 +6,19 @@ Añade al rectángulo un método llamado altura que muestre la altura.
 Añade al rectángulo un método llamado area que muestre el area
 """
 from Punto import Punto
-class Rectangulo(Punto):
+
+class Rectangulo:
     def __init__(self, x1, y1, x2, y2):
-        A = super(Punto).__init__(x1,y1)
-        B = super(Punto).__init__(x2,y2)
-        Diagonal = Punto.Vector(A,B)
-        return "Rectangulo cuya diagonal es: {}, y esta formada por los puntos: {} y {}".format(Diagonal, A, B)
+        P = Punto(x1,y1)
+        Q = Punto(x2,y2)
+        self = Punto.Vector(self=P, other=Q)
+        
+    def base(self):
+        base = abs(self.x1 - self.x2)
+        return "Base del rectangulo: ({},0)".format(base)
+    
+        
+# print(Rectangulo.__init__(x1=1,y1=3,x2=6,y2=4))
+rect = Rectangulo(1,2,5,3)
+print(rect)
+# print(rect.base())

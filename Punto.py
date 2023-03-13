@@ -11,7 +11,7 @@ Añade un método llamado vector, que tome otro punto y calcule el vector result
  La fórmula es la siguiente
 
 """
-
+import math
 class Punto:
     def __init__(self, x, y):
         self.x = x
@@ -43,16 +43,16 @@ class Punto:
     def Vector(self, other):
         Componente_x = other.x - self.x
         Componente_y = other.y - self.y
-        print("Este es el vector formado por los dos puntos: ({},{})".format(Componente_x, Componente_y))
+        return("Vector: ({},{})".format(Componente_x, Componente_y))
     def distancia(self,other):
         Componente_x = other.x - self.x
         Componente_y = other.y - self.y
-        distancia = ((Componente_x)^2 + (Componente_y)^2)^(1/2)
-        return "Distancia entre {} y {} : {}".format(self, other, distancia)
+        distancia = math.sqrt((Componente_x)^2 + (Componente_y)^2)
+        return "Distancia: {}".format(distancia)
 P = Punto(1, 2)
-print(P.__str__())
-print(P.__str2__())
-print(P.cuadrante())
-Q = Punto(-1, 5)
-print(Punto.Vector(self=P,other=Q))
-print(Punto.distancia(self=P, self=Q))
+# print(P.__str__())
+# print(P.__str2__())
+# print(P.cuadrante())
+Q = Punto(1, 5)
+# print(Punto.Vector(self=P,other=Q))
+# print(Punto.distancia(P, Q))
