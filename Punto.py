@@ -12,7 +12,7 @@ Añade un método llamado vector, que tome otro punto y calcule el vector result
 
 """
 import math
-import main
+
 class Punto:
     def __init__(self, x, y):
         self.x = x
@@ -50,6 +50,3 @@ class Punto:
         Componente_y = other.y - self.y
         distancia = math.sqrt((Componente_x)^2 + (Componente_y)^2)
         return "Distancia: {}".format(distancia)
-
-if __name__=="_main_":
-    main()

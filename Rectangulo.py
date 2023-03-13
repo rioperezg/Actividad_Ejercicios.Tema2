@@ -6,7 +6,7 @@ Añade al rectángulo un método llamado altura que muestre la altura.
 Añade al rectángulo un método llamado area que muestre el area
 """
 from Punto import Punto
-import main
+
 
 
 class Rectangulo:
@@ -32,5 +32,4 @@ class Rectangulo:
         altura_tr = self.altura
         Area = (base_tr*altura_tr)/2
         return "Area del triangulo: {} u^2".format(Area)        
-if __name__=="_main_":
-    main()
+

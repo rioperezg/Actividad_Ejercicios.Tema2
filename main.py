@@ -8,8 +8,27 @@ Consulta los vectores AB y BA.
 Crea un rectángulo utilizando los puntos A y B.
 Consulta la base, altura y área del rectángulo.
 """
-import Punto, Rectangulo
-
-
-if __name__=="_main_":
-    
+from Punto import Punto
+from Rectangulo import Rectangulo
+# Creacion de puntos y imprimir por pantalla
+A = Punto(2, 3)
+B = Punto(5, 5)
+C = Punto(-3, -1)
+D = Punto(0, 0)
+print(A.__str__())
+print(B.__str__())
+print(C.__str__())
+print(D.__str__())
+# Cuadrante de puntos A,C y D
+print(A.cuadrante())
+print(C.cuadrante())
+print(D.cuadrante())
+# Distancia entre A y B, y B y A
+print(Punto.distancia(self=A,other=B))
+print(Punto.distancia(self=B,other=A))
+# Rectangulo con A y B
+print(Rectangulo.__init__(2, 3, 5, 5))
+# Altura, base y area
+print(Rectangulo.Altura(2, 3, 5, 5))
+print(Rectangulo.Base(2, 3, 5, 5))
+print(Rectangulo.Area_triang(2, 3, 5, 5))
