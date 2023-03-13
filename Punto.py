@@ -49,10 +49,3 @@ class Punto:
         Componente_y = other.y - self.y
         distancia = math.sqrt((Componente_x)^2 + (Componente_y)^2)
         return "Distancia: {}".format(distancia)
-P = Punto(1, 2)
-# print(P.__str__())
-# print(P.__str2__())
-# print(P.cuadrante())
-Q = Punto(1, 5)
-# print(Punto.Vector(self=P,other=Q))
-# print(Punto.distancia(P, Q))
